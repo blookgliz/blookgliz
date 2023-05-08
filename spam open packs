@@ -42,7 +42,7 @@
                     }).catch(e => error = true);
                     if (error) break;
                 }
-                alert(`(${Date.now() - now}ms) Results:\n${Object.entries(blooks).map(([blook, amount=999999999]) => `    ${blook} ${amount}`).join(`\n`)}`);
+                alert(`(${Date.now() - now}ms) Results:\n${Object.entries(blooks).map(([blook, amount]) => `    ${blook} ${amount}`).join(`\n`)}`);
             }).catch(() => alert('There was an error user data!'));
         }
     });
